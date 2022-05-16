@@ -1,0 +1,283 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Etna';
+    src: url('fonts/etna-free-font.otf');
+}
+
+@font-face {
+    font-family: 'Cimero';
+    src: url('fonts/CimeroPro.otf');
+}
+
+@font-face {
+    font-family: 'Mistica';
+    src: url('fonts/MusticaproSemibold.otf');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: black;
+}
+.header__topmenu_contacts {
+    width: 40%;
+}
+.menu-list {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.row_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__menu {
+    width: 70%;
+}
+
+.item_a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.item_a:hover {
+    color: #EBB8E2;
+    text-shadow:
+        0 0 5px #EBB8E2,
+        0 0 10px #EBB8E2,
+        0 0 20px #EBB8E2,
+        0 0 40px #0ff,
+        0 0 80px #0ff,
+        0 0 90px #0ff,
+        0 0 100px #0ff,
+        0 0 150px #0ff;
+}
+
+.main__head {
+    background-image: url("img/main_back_.jpg");
+    background-repeat: no-repeat;
+    height: 1080px;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.about__main__head {
+    background-image: url("img/about_back.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1200px;
+    min-height: 100vh;
+}
+
+.about__main__head_p {
+    font-size: 28px;
+    font-family: 'Roboto';
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.about__main_h1 {
+    font-size: 54px;
+    font-family: 'Etna';
+    text-align: center;
+    padding-top: 50px;
+    text-transform: uppercase;
+}
+
+.about__partners {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main__head_h1 {
+    font-size: 84px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 110px;
+    font-family: 'Etna';
+}
+
+.main__travelling_africa {
+    background-image: url("img/africa_back_.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.main__travelling_h1 {
+    font-size: 155px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 205px;
+    font-family: 'Mistica';
+    letter-spacing: 15px;
+    font-weight: 700;
+}
+
+.travelling__content-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-box-img {
+    border-radius: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.content-box-text {
+    text-align: justify;
+    text-indent: 40px;
+}
+
+footer {
+    background-image: url("img/footer_back_.jpg");
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+.row-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.footer__h2 {
+    font-size: 18px;
+    font-family: 'Etna';
+    text-transform: uppercase;
+    padding-left: 31px;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.footer__text {
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-sm {
+        display: flex;
+        flex-direction: column;
+    }
+    .header__topmenu_contacts {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .header__logo {
+        display: none;
+    }
+    .header__menu {
+        width: 100%;
+    }
+    .item_a {
+        font-size: 12px;
+    }
+    .main__head_h1 {
+        font-size: 76px;
+    }
+    .row-footer {
+        flex-direction: column;
+    }
+    .travelling {
+        display: none;
+    }
+    .footer__text {
+        font-size: 7px;
+    }
+    .about__partners {
+        flex-direction: column;
+    }
+    .about__main__head_p {
+        font-size: 12px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    .about__main_h1 {
+        margin-bottom: 80px;
+    }
+    .main__travelling_h1 {
+        font-size: 90px;
+    }
+    .content-box-text {
+        text-align: justify;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .header__topmenu_contacts {
+        width: 60%;
+    }
+    .header__logo {
+        display: none;
+    }
+    .header__menu {
+        width: 100%;
+    }
+    .item_a {
+        font-size: 12px;
+    }
+    .main__head_h1 {
+        font-size: 76px;
+    }
+    .row-footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .footer__text {
+        font-size: 12px;
+    }
+    .about__partners {
+        flex-direction: column;
+    }
+    .about__main__head_p {
+        font-size: 12px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    .about__main_h1 {
+        margin-bottom: 80px;
+    }
+    .footer-list {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .publication, .travelling {
+        width: 100%;
+    }
+    .main__travelling_h1 {
+        font-size: 90px;
+    }
+    .content-box-text {
+        text-align: justify;
+    }
+}

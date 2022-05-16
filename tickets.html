@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Туристический портал</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-dark bg-dark">
+                        <div class="container-fluid navbar-sm">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Поиск по сайту" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Поиск</button>
+                            </form>
+                            <div class="header__topmenu_contacts">
+                                <ul class="menu-list">
+                                    <li><a href="#"><img src="img/email.png" alt="E-mail"></a></li>
+                                    <li><a href="#"><img src="img/viber.png" alt="Viber"></a></li>
+                                    <li><a href="#"><img src="img/whatsapp.png" alt="Whatsapp"></a></li>
+                                    <li><a href="#"><img src="img/vk.png" alt="VK"></a></li>
+                                    <li><a href="#"><img src="img/facebook.png" alt="Facebook"></a></li>
+                                    <li><a href="#"><img src="img/instagram.png" alt="Instagram"></a></li>
+                                    <li><a href="#"><img src="img/twitter.png" alt="Twitter"></a></li>
+                                    <li><a href="#"><img src="img/icon-youtube.png" alt="Youtube"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="row_menu">
+                <div class="header__logo">
+                    <a href="index.html"><img src="img/logo.png" alt="Наш логотип"></a>
+                </div>
+                <div class="header__menu">
+                    <nav class="navbar-nav"> 
+                        <ul class="menu-list">
+                            <li><a class="item_a" href="index.html">ГЛАВНАЯ</a></li>
+                            <li class="dropdown">
+                                <a class="item_a dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                ПУТЕШЕСТВИЯ
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                                    <li class="header__menu_item"><a class="dropdown-item item_a" href="africa.html">Африка</a></li>
+                                    <li class="header__menu_item"><a class="dropdown-item item_a" href="australia.html">Австралия и Океания</a></li>
+                                    <li class="header__menu_item"><a class="dropdown-item item_a" href="america.html">Америка и Карибы</a></li>
+                                    <li class="header__menu_item"><a class="dropdown-item item_a" href="asia.html">Азия</a></li>
+                                    <li class="header__menu_item"><a class="dropdown-item item_a" href="russia.html">Россия</a></li>
+                                    <li class="header__menu_item"><a class="dropdown-item item_a" href="europe.html">Европа</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="item_a" href="articles.html">СТАТЬИ</a></li>
+                            <li><a class="item_a" href="blogs.html">БЛОГИ</a></li>
+                            <li><a class="item_a" href="tickets.html">АВИАБИЛЕТЫ</a></li>
+                            <li class="dropdown">
+                                <a class="item_a dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                О НАС
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                                    <li class="header__menu_item"><a class="dropdown-item item_a" href="contacts.html">Наши контакты</a></li>
+                                    <li class="header__menu_item"><a class="dropdown-item item_a" href="partners.html">Наши партнёры</a></li>
+                                    <li class="header__menu_item"><a class="dropdown-item item_a" href="vacancies.html">Вакансии</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header> 
+    <main class="main">
+        <section class="main__travelling_tickets">
+            <h1 class="main__travelling_h1"><a name="top">Авиабилеты</h1></a>
+        </section>
+        <section class="main__tickets">
+            <div class="container">
+                    <form class="tickets-box">
+                        <div class="form-floating">
+                            <input type="TownFrom" class="form-control" id="floatingFrom" placeholder="Город вылета">
+                            <label for="floatingFrom">Город вылета</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="TownTo" class="form-control" id="floatingTo" placeholder="Город прибытия">
+                            <label for="floatingTo">Город прибытия</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="date" class="form-control" id="floatingFromDate" placeholder="Туда">
+                            <label for="floatingFromDate">Туда</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="date" class="form-control" id="floatingToDate" placeholder="Обратно">
+                            <label for="floatingToDate">Обратно</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="reset" class="form-control btn btn-primary btn-lg" id="floatingClear" value="Очистить">
+                        </div>
+                        <div class="form-floating">
+                            <input type="submit" class="form-control btn btn-primary btn-lg" id="floatingFind" placeholder="Найти билеты">
+                        </div>
+                    </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row-footer">
+                    <div class="publication">
+                        <h2 class="footer__h2">Последнее на сайте</h2>
+                        <ul class="footer-list">
+                            <li><a class="item_a" href="#">Что делать, если забыл вещь в самолете?</a></li>
+                            <li><a class="item_a" href="#">Обычаи и устои современной Шри-Ланки</a></li>
+                            <li><a class="item_a" href="#">Лесной парк Чжанцзяцзе, Китай</a></li>
+                            <li><a class="item_a" href="#">Одесса. Памятник Взятке</a></li>
+                        </ul>
+                    </div>
+                    <div class="travelling">
+                        <h2 class="footer__h2">Направления</h2>
+                        <ul class="footer-list">
+                            <li class="header__menu_item"><a class="item_a" href="africa.html">Африка</a></li>
+                            <li class="footer__menu_item"><a class="item_a" href="australia.html">Австралия и Океания</a></li>
+                            <li class="footer__menu_item"><a class="item_a" href="america.html">Америка и Карибы</a></li>
+                            <li class="footer__menu_item"><a class="item_a" href="asia.html">Азия</a></li>
+                            <li class="footer__menu_item"><a class="item_a" href="russia.html">Россия</a></li>
+                            <li class="footer__menu_item"><a class="item_a" href="europe.html">Европа</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__topmenu_contacts">
+                        <h2 class="footer__h2">Подписки в соцсетях</h2>
+                        <ul class="menu-list">
+                            <li><a href="#"><img src="img/email.png" alt="E-mail"></a></li>
+                            <li><a href="#"><img src="img/viber.png" alt="Viber"></a></li>
+                            <li><a href="#"><img src="img/whatsapp.png" alt="Whatsapp"></a></li>
+                            <li><a href="#"><img src="img/vk.png" alt="VK"></a></li>
+                            <li><a href="#"><img src="img/facebook.png" alt="Facebook"></a></li>
+                            <li><a href="#"><img src="img/instagram.png" alt="Instagram"></a></li>
+                            <li><a href="#"><img src="img/twitter.png" alt="Twitter"></a></li>
+                            <li><a href="#"><img src="img/icon-youtube.png" alt="Youtube"></a></li>
+                        </ul>
+                    </div>
+            </div>
+            <div class="row">
+                <p class="footer__text">
+                    При полном или частичном использовании материалов сайта прямая индексируемая гиперссылка
+                    на наш сайт обязательна.<br>
+                    &copy; 2022г. Все права защищены. <br>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+</body>
+</html>

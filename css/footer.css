@@ -1,0 +1,30 @@
+footer {
+    background-image: url("../img/footer_back_.jpg");
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+.row-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.footer__h2 {
+    font-size: 18px;
+    font-family: 'Etna';
+    text-transform: uppercase;
+    padding-left: 31px;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.footer__text {
+    margin: 0;
+    font-family: 'Roboto';
+}
